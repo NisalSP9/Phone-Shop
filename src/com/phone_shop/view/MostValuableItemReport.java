@@ -129,7 +129,7 @@ public class MostValuableItemReport extends javax.swing.JDialog {
 
         for (int i = 0; i < model.getRowCount(); i++) {
 
-            dataset.setValue((String) model.getValueAt(i, 1), (java.math.BigDecimal) model.getValueAt(i, 2));
+            dataset.setValue((String) model.getValueAt(i, 0), (java.math.BigDecimal) model.getValueAt(i, 1));
 
         }
 

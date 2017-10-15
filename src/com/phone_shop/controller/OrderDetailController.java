@@ -20,7 +20,7 @@ import java.sql.Statement;
 public class OrderDetailController {
 
     public static int addOrderDetail(OrderDetail orderDetail) throws ClassNotFoundException, SQLException {
-        String sql = "Insert into orderDetail values('" + orderDetail.getOrderID() + "','" + orderDetail.getItemCode() + "','" + orderDetail.getName() + "','" + orderDetail.getQty() + "','" + orderDetail.getUnitPrice() + "','" + orderDetail.getDiscountPerSell() + "','" + orderDetail.getDiscountPerItem() + "','" + orderDetail.getSellingPrice() + "','ture')";
+        String sql = "Insert into orderdetail values('" + orderDetail.getOrderID() + "','" + orderDetail.getItemCode() + "','" + orderDetail.getName() + "','" + orderDetail.getQty() + "','" + orderDetail.getUnitPrice() + "','" + orderDetail.getDiscountPerSell() + "','" + orderDetail.getDiscountPerItem() + "','" + orderDetail.getSellingPrice() + "','ture')";
         Connection conn = DBConnection.getInstance().getConnection();
         Statement stm = conn.createStatement();
 
@@ -39,7 +39,7 @@ public class OrderDetailController {
     }
 
     public static int deleteOrderDetail(String orderID) throws ClassNotFoundException, SQLException {
-        String sql = "update orderDetail set visibility = 'false' where orderID ='" + orderID + "'";
+        String sql = "update orderdetail set visibility = 'false' where orderID ='" + orderID + "'";
         Connection conn = DBConnection.getInstance().getConnection();
         Statement stm = conn.createStatement();
         return stm.executeUpdate(sql);

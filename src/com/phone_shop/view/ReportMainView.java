@@ -53,7 +53,7 @@ public class ReportMainView extends javax.swing.JDialog {
         setPreferredSize(new java.awt.Dimension(1200, 700));
         getContentPane().setLayout(null);
 
-        RCincomeReport.setFont(new java.awt.Font("Open Sans", 1, 18)); // NOI18N
+        RCincomeReport.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         RCincomeReport.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/phone_shop/view/pics/Places-user-identity-icon.png"))); // NOI18N
         RCincomeReport.setText("Income Report For Retail Sales ");
         RCincomeReport.setBorder(null);
@@ -86,7 +86,7 @@ public class ReportMainView extends javax.swing.JDialog {
         getContentPane().add(jButton6);
         jButton6.setBounds(1140, 0, 50, 30);
 
-        incomeReportButton.setFont(new java.awt.Font("Open Sans", 1, 18)); // NOI18N
+        incomeReportButton.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         incomeReportButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/phone_shop/view/pics/income.png"))); // NOI18N
         incomeReportButton.setText("Income Report");
         incomeReportButton.setBorder(null);
@@ -101,7 +101,7 @@ public class ReportMainView extends javax.swing.JDialog {
         getContentPane().add(incomeReportButton);
         incomeReportButton.setBounds(570, 320, 230, 240);
 
-        RCincomeReport1.setFont(new java.awt.Font("Open Sans", 1, 18)); // NOI18N
+        RCincomeReport1.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         RCincomeReport1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/phone_shop/view/pics/face.png"))); // NOI18N
         RCincomeReport1.setText("Income Report For Wholesales");
         RCincomeReport1.setBorder(null);
@@ -116,12 +116,12 @@ public class ReportMainView extends javax.swing.JDialog {
         getContentPane().add(RCincomeReport1);
         RCincomeReport1.setBounds(750, 120, 340, 200);
 
-        jLabel2.setFont(new java.awt.Font("Open Sans", 1, 30)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Open Sans", 1, 25)); // NOI18N
         jLabel2.setText("Report Manager");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(10, 10, 270, 60);
 
-        mostVaulableCutomerButton.setFont(new java.awt.Font("Open Sans", 1, 18)); // NOI18N
+        mostVaulableCutomerButton.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         mostVaulableCutomerButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/phone_shop/view/pics/Places-user-identity-icon.png"))); // NOI18N
         mostVaulableCutomerButton.setText("Most Valuable Customers");
         mostVaulableCutomerButton.setBorder(null);
@@ -136,7 +136,7 @@ public class ReportMainView extends javax.swing.JDialog {
         getContentPane().add(mostVaulableCutomerButton);
         mostVaulableCutomerButton.setBounds(490, 150, 260, 170);
 
-        fastMovingItemButton.setFont(new java.awt.Font("Open Sans", 1, 18)); // NOI18N
+        fastMovingItemButton.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         fastMovingItemButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/phone_shop/view/pics/Shopping-cart-insert-icon (2).png"))); // NOI18N
         fastMovingItemButton.setText("Fast Moving Items");
         fastMovingItemButton.setBorder(null);
@@ -151,7 +151,7 @@ public class ReportMainView extends javax.swing.JDialog {
         getContentPane().add(fastMovingItemButton);
         fastMovingItemButton.setBounds(70, 150, 200, 170);
 
-        mostValuableItemButton.setFont(new java.awt.Font("Open Sans", 1, 18)); // NOI18N
+        mostValuableItemButton.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         mostValuableItemButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/phone_shop/view/pics/Shopping-cart-accept-icon (1).png"))); // NOI18N
         mostValuableItemButton.setText("Most Valuable Items");
         mostValuableItemButton.setBorder(null);
@@ -166,7 +166,7 @@ public class ReportMainView extends javax.swing.JDialog {
         getContentPane().add(mostValuableItemButton);
         mostValuableItemButton.setBounds(270, 150, 220, 170);
 
-        highestCreditHolderButton.setFont(new java.awt.Font("Open Sans", 1, 18)); // NOI18N
+        highestCreditHolderButton.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         highestCreditHolderButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/phone_shop/view/pics/Invoice-icon.png"))); // NOI18N
         highestCreditHolderButton.setText("Highest Credit Holder");
         highestCreditHolderButton.setBorder(null);
@@ -181,7 +181,7 @@ public class ReportMainView extends javax.swing.JDialog {
         getContentPane().add(highestCreditHolderButton);
         highestCreditHolderButton.setBounds(350, 320, 220, 200);
 
-        mostChequeReceivingBankButton.setFont(new java.awt.Font("Open Sans", 1, 18)); // NOI18N
+        mostChequeReceivingBankButton.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
         mostChequeReceivingBankButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/phone_shop/view/pics/Bank-icon.png"))); // NOI18N
         mostChequeReceivingBankButton.setText("Most Cheque Receiving Bank");
         mostChequeReceivingBankButton.setBorder(null);

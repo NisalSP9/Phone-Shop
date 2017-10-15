@@ -130,9 +130,9 @@ public final class OpenView extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(1090, 650, 100, 30);
 
-        clockLable.setFont(new java.awt.Font("Utsaah", 0, 36)); // NOI18N
+        clockLable.setFont(new java.awt.Font("Utsaah", 0, 20)); // NOI18N
         clockLable.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        clockLable.setText("7878");
+        clockLable.setText("1878");
         getContentPane().add(clockLable);
         clockLable.setBounds(960, 80, 210, 30);
 

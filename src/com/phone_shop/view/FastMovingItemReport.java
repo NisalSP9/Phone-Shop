@@ -74,11 +74,11 @@ public class FastMovingItemReport extends javax.swing.JDialog {
 
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3"
+                "Title 1", "Title 2"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false
+                false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -89,7 +89,6 @@ public class FastMovingItemReport extends javax.swing.JDialog {
         if (jTable1.getColumnModel().getColumnCount() > 0) {
             jTable1.getColumnModel().getColumn(0).setResizable(false);
             jTable1.getColumnModel().getColumn(1).setResizable(false);
-            jTable1.getColumnModel().getColumn(2).setResizable(false);
         }
 
         getContentPane().add(jScrollPane1);
@@ -128,7 +127,7 @@ public class FastMovingItemReport extends javax.swing.JDialog {
 
         for (int i = 0; i < model.getRowCount(); i++) {
 
-            dataset.setValue((String) model.getValueAt(i, 1), (java.math.BigDecimal) model.getValueAt(i, 2));
+            dataset.setValue((String) model.getValueAt(i, 0), (java.math.BigDecimal) model.getValueAt(i, 1));
 
         }
         freeChart = ChartFactory.createPieChart("Fast Moving Items", dataset, true, true, true);

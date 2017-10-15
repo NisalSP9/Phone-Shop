@@ -26,7 +26,7 @@ public class CustomerController {
     //search customers by id
     public static Customer searchCustomer(String cust_ID) throws ClassNotFoundException, SQLException {
 
-        String sql = "Select cust_ID,Name,Address,mobile_Number,land_Line,email From Customer where visibility = 'true' and cust_ID ='" + cust_ID + "'";
+        String sql = "Select cust_ID,Name,Address,mobile_Number,land_Line,email From customer where visibility = 'true' and cust_ID ='" + cust_ID + "'";
         Connection conn = DBConnection.getInstance().getConnection();
         Statement stm = conn.createStatement();
         ResultSet rst = stm.executeQuery(sql);

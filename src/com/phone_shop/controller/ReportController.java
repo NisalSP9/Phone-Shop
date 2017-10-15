@@ -19,7 +19,7 @@ public class ReportController {
 
     public ResultSet fastMovingItem() throws SQLException, ClassNotFoundException {
 
-        String sql = "SELECT item_Code,Description,sum(qty) as Total_QTY FROM phone_shop.orderdetail where visibility = 'ture' group by Item_Code order by qty desc limit 10";
+        String sql = "SELECT description,sum(qty) as Total_QTY FROM phone_shop.orderdetail where visibility = 'ture' group by description order by Total_QTY desc limit 10";
         Connection conn = DBConnection.getInstance().getConnection();
         Statement stm = conn.createStatement();
         ResultSet rst = stm.executeQuery(sql);
@@ -29,7 +29,7 @@ public class ReportController {
 
     public ResultSet mostVaulebleItem() throws SQLException, ClassNotFoundException {
 
-        String sql = "SELECT item_Code,Description,max(Unit_Price)*sum(qty) as Total_Value FROM phone_shop.orderdetail where visibility = 'ture' group by item_Code order by Total_Value desc  limit 10";
+        String sql = "SELECT Description,max(Unit_Price)*sum(qty) as Total_Value FROM phone_shop.orderdetail where visibility = 'ture' group by Description order by Total_Value desc  limit 10";
 
         Connection conn = DBConnection.getInstance().getConnection();
         Statement stm = conn.createStatement();
@@ -74,7 +74,7 @@ public class ReportController {
     
     public ResultSet incomeOfTheDayForAllPayments(String date) throws SQLException, ClassNotFoundException {
 
-        String sql = "SELECT date,paymentType, sum(Amount) as total FROM  phone_shop.paymenttable where date like '"+date+"%' group by paymentType;";
+        String sql = "SELECT paymentType, sum(Amount) as total FROM  phone_shop.paymenttable where date like '"+date+"%' group by paymentType;";
         Connection conn = DBConnection.getInstance().getConnection();
         Statement stm = conn.createStatement();
         ResultSet rst = stm.executeQuery(sql);
@@ -84,7 +84,7 @@ public class ReportController {
     
     public ResultSet incomeOfTheDayForAllPaymentsRC(String date) throws SQLException, ClassNotFoundException {
 
-        String sql = "SELECT date,paymentType, sum(Amount) as total FROM  phone_shop.paymenttable where date like '"+date+"%' and customer_ID = 0 group by paymentType;";
+        String sql = "SELECT paymentType, sum(Amount) as total FROM  phone_shop.paymenttable where date like '"+date+"%' and customer_ID = 0 group by paymentType;";
         Connection conn = DBConnection.getInstance().getConnection();
         Statement stm = conn.createStatement();
         ResultSet rst = stm.executeQuery(sql);
@@ -93,7 +93,7 @@ public class ReportController {
     }
 
     public ResultSet incomeOfTheDayForAllPaymentsWS(String date) throws SQLException, ClassNotFoundException {
-       String sql = "SELECT date,paymentType, sum(Amount) as total FROM  phone_shop.paymenttable where date like '"+date+"%' and customer_ID != 0 group by paymentType;";
+       String sql = "SELECT paymentType, sum(Amount) as total FROM  phone_shop.paymenttable where date like '"+date+"%' and customer_ID != 0 group by paymentType;";
         Connection conn = DBConnection.getInstance().getConnection();
         Statement stm = conn.createStatement();
         ResultSet rst = stm.executeQuery(sql);

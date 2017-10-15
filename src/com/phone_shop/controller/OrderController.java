@@ -23,7 +23,7 @@ import javax.swing.DefaultComboBoxModel;
 public class OrderController {
 
     public static int addOrder(Order order) throws ClassNotFoundException, SQLException {
-        String sql = "Insert into orderTable values('" + order.getOrderID() + "','" + order.getDate() + "','" + order.getCus_NIC() + "','ture')";
+        String sql = "Insert into ordertable values('" + order.getOrderID() + "','" + order.getDate() + "','" + order.getCus_NIC() + "','ture')";
         Connection conn = DBConnection.getInstance().getConnection();
         Statement stm = conn.createStatement();
 

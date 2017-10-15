@@ -146,7 +146,7 @@ public final class Manage_Item extends javax.swing.JDialog {
         previousButton.setBounds(1080, 650, 50, 50);
 
         accessoricesTable.setBackground(new java.awt.Color(1, 139, 186));
-        accessoricesTable.setFont(new java.awt.Font("Utsaah", 0, 20)); // NOI18N
+        accessoricesTable.setFont(new java.awt.Font("Utsaah", 0, 12)); // NOI18N
         accessoricesTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},

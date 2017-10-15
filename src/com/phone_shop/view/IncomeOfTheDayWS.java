@@ -163,7 +163,7 @@ public class IncomeOfTheDayWS extends javax.swing.JDialog {
 
         for (int i = 0; i < model.getRowCount(); i++) {
 
-            dataset.setValue((String) model.getValueAt(i, 1), (java.math.BigDecimal) model.getValueAt(i, 2));
+            dataset.setValue((String) model.getValueAt(i, 0), (java.math.BigDecimal) model.getValueAt(i, 1));
 
         }
         freeChart = ChartFactory.createPieChart("Income Report", dataset, true, true, true);
@@ -271,7 +271,7 @@ public class IncomeOfTheDayWS extends javax.swing.JDialog {
         
         for (int i = 0; i < jTable1.getRowCount(); i++) {
 
-            total += Double.parseDouble(jTable1.getValueAt(i, 2).toString());
+            total += Double.parseDouble(jTable1.getValueAt(i, 1).toString());
 
         }
 
